@@ -1,0 +1,53 @@
+<!--<p>xyz works!</p>
+<input />
+<h3>Cart</h3>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<input />
+
+
+<p>
+  <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
+<div class="cart-item">
+</div>
+
+<form>
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+
+</form>-->
+
+
+<h1>Angular 15 Install Material Design Example - ItSolutionStuff.Com</h1>
+
+<form class="example-form" (ngSubmit)="click()">
+  <mat-form-field class="example-full-width">
+    <mat-label>Name:</mat-label>
+    <input matInput  required  placeholder="Ex. Hardik" class="form-control" [(ngModel)]="Name" name="Name" >
+  </mat-form-field>
+    <span>{{Name}}</span>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Address:</mat-label>
+    <textarea matInput placeholder="Ex. 204, Sarvo, India"></textarea>
+  </mat-form-field>
+
+  <button (click)='click()'   mat-raised-button color="primary">Submit!</button>
+</form>
+
+
